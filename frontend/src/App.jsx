@@ -1,0 +1,22 @@
+import { Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import Market from './Pages/Market';
+import Docs from './Pages/Docs';
+import Navbar from './Component/Navbar';
+import Governance from './Pages/Governance/App';
+
+const App = () => {
+  return (
+    <div className='bg-black text-white w-screen h-screen'>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/governance/*" element={<Governance />} />
+        <Route path="/market" element={<Market />} />
+        <Route path="/docs" element={<Docs />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
