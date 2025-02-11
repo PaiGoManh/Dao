@@ -5,7 +5,7 @@ const GovernanceNavbar = () => {
   return (
     <nav className="w-full h-20 bg-white shadow-md text-black border-b border-gray-300">
       <div className="flex justify-between mx-[10%] py-5 items-center">
-        <Link to="/governance" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <button className="border-gray-200 rounded-md border p-1 text-md px-5 font-bold hover:border-gray-800 cursor-pointer">
             Dao
           </button>
